@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Афиша Кинотеатра</title>
+    <!-- Подключаем скрипт Telegram строго в head, чтобы он загружался первым -->
+    <script src="https://telegram.org"></script>
 </head>
 <body>
     <div class="container">
@@ -12,15 +14,14 @@
         <div class="inner">
             <div class="item">
                 <img src="1.png" alt="Интерстеллар" class="img">
-                <button class="btn" id="btn1">Интерстеллар</button>
+                <button class="btn" onclick="selectMovie('interstellar', 'Посмотреть сеансы: Интерстеллар')">Интерстеллар</button>
             </div>
             <div class="item">
                 <img src="2.png" alt="1+1" class="img">
-                <button class="btn" id="btn2">1 + 1</button>
+                <button class="btn" onclick="selectMovie('one_plus_one', 'Посмотреть сеансы: 1+1')">1 + 1</button>
             </div>
         </div>
     </div>
-    <script src="https://telegram.org"></script>
     <script src="app.js"></script>
 </body>
 </html>
